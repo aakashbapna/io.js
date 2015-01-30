@@ -58,7 +58,8 @@ NODE_EXTERN v8::Local<v8::Value> UVException(v8::Isolate* isolate,
                                              int errorno,
                                              const char* syscall = NULL,
                                              const char* message = NULL,
-                                             const char* path = NULL);
+                                             const char* path = NULL,
+                                             const char* dest = NULL);
 
 NODE_DEPRECATED("Use UVException(isolate, ...)",
                 inline v8::Local<v8::Value> ErrnoException(
